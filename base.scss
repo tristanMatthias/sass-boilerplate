@@ -1,0 +1,39 @@
+//--------------------------------------------------------------- Import library
+@import "abstracts/include";
+
+
+//---------------------------------------------------------------- Import vendor
+@import "vendor/include";
+
+
+//--------------------------------------------------------------- Import layouts
+@import "layouts/include";
+
+
+//------------------------------------------------------- Import main components
+@import "components/include";
+
+
+//------------------------------------------------------- Main classes and setup
+*, *::before, *::after, *:focus {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+    font-family: var(--ff-main);
+    font-size: var(--fs-base);
+    line-height: var(--f-line-height);
+    color: var(--c-text);
+}
+
+
+.db      { display: block; }
+.dib     { display: inline-block; }
+.m-hide,
+.hide    { display: none; }
+.f-left  { float: left; }
+.f-right { float: right; }
+.cover   { @extend %cover; }
+.por     { position: relative; }
+.curp    { cursor: pointer; }

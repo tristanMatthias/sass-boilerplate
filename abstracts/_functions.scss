@@ -1,0 +1,14 @@
+@function gs($value) {
+    @return calc(var(--grid-size) * #{$value});
+}
+
+@function map-set($map, $key, $value) {
+  $new: ($key: $value);
+  @return map-merge($map, $new);
+}
+
+@mixin color($name, $value) {
+    --c-#{$name}: $value;
+    --c-#{$name}-light: lighten($value, 1%);
+    --c-#{$name}-dark: darken($value, 2%);
+}

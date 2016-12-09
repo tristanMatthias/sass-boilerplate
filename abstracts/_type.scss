@@ -1,0 +1,13 @@
+// ----------------------------------------------------------------------- Sizes
+%fs-tiny  { font-size: var(--fs-tiny); }
+%fs-small { font-size: var(--fs-small); }
+%fs-main  { font-size: var(--fs-main); }
+%fs-large { font-size: var(--fs-large); }
+%fs-grand { font-size: var(--fs-grand); }
+%fs-huge  { font-size: var(--fs-huge); }
+
+// --------------------------------------------------------------------- Weights
+%fw-thin  { font-weight: 200; }
+%fw-med   { font-weight: 500; }
+%fw-bold  { font-weight: 600; }
+%fw-black { font-weight: 700; }

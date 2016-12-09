@@ -1,0 +1,27 @@
+// ----------------------------------------------------------------------- Forms
+%input {
+    height: gs(1);
+    font-size: var(--fs-main);
+    font-family: var(--ff-main);
+    padding: 0 gs(1/4);
+    border: var(--border-light);
+    color: var(--c-text);
+    @extend %rounded;
+    outline: none;
+    &:focus {
+        border-color: var(--c-main);
+    }
+}
+
+
+// ------------------------------------------------------------------------ Misc
+%cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+%rounded {
+    border-radius: var(--border-radius);
+}

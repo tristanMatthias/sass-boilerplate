@@ -1,0 +1,16 @@
+html * {
+    font-size: var(--fs-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-heading);
+}
+
+h1 { font-size: var(--fs-huge); }
+h2 { font-size: var(--fs-grand); }
+h3 { font-size: var(--fs-large); }
+h4 { font-size: var(--fs-main); }
+
+h1 + p { margin-top: gs(1/2); }
+p { margin: gs(1/2) 0; }
+h2 { margin-bottom: gs(1/4); }
