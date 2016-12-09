@@ -1,0 +1,61 @@
+//--------------------------------------------------------------- Import library
+@import "../lib/abstracts/include";
+
+
+//----------------------------------------------------------------- Import fonts
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+
+//--------------------------------------------------------------- Variable setup
+:root {
+    //------------------------------------------------------------ Main settings
+    --base-size: 10px;
+    --grid-size: 4rem;
+
+
+    //------------------------------------------------------------------- Layout
+    --border-radius: 0.2rem;
+    --border-light: 1px solid var(--c-grey-light);
+
+
+    //------------------------------------------------------------------- Colors
+    @include color('black', #4d515c);
+    @include color('grey-dark', #6f7582);
+    @include color('grey-mid', #c0c1c2);
+    @include color('grey-light', #dddfe0);
+    @include color('grey-lightest', #ebeced);
+    @include color('white-off', #f6f8fb);
+    @include color('white', #ffffff);
+    @include color('blue', #3577ac);
+    @include color('teal', #35aca8);
+    @include color('green', #35b05e);
+    @include color('red', #d45858);
+    @include color('orange', #e8b127);
+    @include color('purple', #914cc4);
+
+    @include color('bg', #f6f8fb);
+    @include color('main', #e8b127);
+    @include color('alt', #3577ac);
+
+    --c-text: var(--c-grey-dark);
+
+    --c-shadow: rgba(#dddfe0, 0.5);
+
+
+    //--------------------------------------------------------------- Typography
+    --fs-base:       var(--base-size);
+    --fs-tiny:       1rem;
+    --fs-small:      1.2rem;
+    --fs-main:       1.4rem;
+    --fs-large:      1.8rem;
+    --fs-grand:      2.4rem;
+    --fs-huge:       3.6rem;
+
+    --f-line-height: 1.5em;
+
+    --ff-heading:    'Oxygen', sans-serif;
+    --ff-main:       'Source Sans Pro', sans-serif;
+
+}
