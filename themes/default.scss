@@ -13,7 +13,15 @@
     //------------------------------------------------------------ Main settings
     --base-size: 10px;
     --grid-size: 4rem;
+    --ani-time: 0.3s;
 
+    //-------------------------------------------------------------------- Sizes
+    --size-tiny: 1rem;
+    --size-xsmall: 1.5rem;
+    --size-small: 2rem;
+    --size-medium: 3rem;
+    --size-large: 4rem;
+    --size-huge: 6rem;
 
     //------------------------------------------------------------------- Layout
     --border-radius: 0.2rem;
@@ -32,14 +40,17 @@
     @include color('teal', #35aca8);
     @include color('green', #35b05e);
     @include color('red', #d45858);
-    @include color('orange', #e8b127);
+    @include color('orange', #ffc636);
     @include color('purple', #914cc4);
 
     @include color('bg', #f6f8fb);
-    @include color('main', #e8b127);
+    @include color('main', #ffc636);
     @include color('alt', #3577ac);
+    @include color('error', #d45858);
+    @include color('success', #35b05e);
 
     --c-text: var(--c-grey-dark);
+    --c-text-light: var(--c-grey-mid);
 
     --c-shadow: rgba(#dddfe0, 0.5);
 
@@ -58,4 +69,22 @@
     --ff-heading:    'Oxygen', sans-serif;
     --ff-main:       'Source Sans Pro', sans-serif;
 
+}
+
+
+
+
+
+h1 {
+    display: inline-block;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 2px;
+        bottom: gs(-1/16);
+        background-color: var(--c-main);
+    }
 }

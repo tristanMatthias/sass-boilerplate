@@ -1,15 +1,47 @@
+// ----------------------------------------------------------------------- Sizes
+$sizes: ('tiny', 'small', 'medium', 'large', 'huge');
+@mixin sizes {
+    @each $size in $sizes {
+        &.#{$size} {
+            width: var(--size-#{$size});
+            height: var(--size-#{$size});
+        }
+    }
+}
+@mixin sizesComponents() {
+    @each $size in $sizes {
+        :host(.#{$size}) {
+            width: var(--size-#{$size});
+            height: var(--size-#{$size});
+        }
+    }
+}
+
 // ----------------------------------------------------------------------- Forms
 %input {
+    display: inline-block;
     height: gs(1);
     font-size: var(--fs-main);
     font-family: var(--ff-main);
     padding: 0 gs(1/4);
     border: var(--border-light);
     color: var(--c-text);
+    vertical-align: top;
     @extend %rounded;
+    @extend %shadow;
     outline: none;
+    transition: all var(--ani-time);
+
     &:focus {
         border-color: var(--c-main);
+        box-shadow: 0 3px 4px var(--c-main-opacity);
+    }
+
+    &.error {
+        border-color: var(--c-error);
+        &:focus {
+            box-shadow: 0 3px 4px var(--c-error-opacity);
+        }
     }
 }
 
@@ -24,4 +56,7 @@
 }
 %rounded {
     border-radius: var(--border-radius);
+}
+%shadow {
+    box-shadow: 0 3px 4px var(--c-shadow);
 }

@@ -11,4 +11,5 @@
     --c-#{$name}: $value;
     --c-#{$name}-light: lighten($value, 1%);
     --c-#{$name}-dark: darken($value, 2%);
+    --c-#{$name}-opacity: rgba($value, 0.5);
 }

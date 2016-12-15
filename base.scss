@@ -27,10 +27,12 @@ html {
     color: var(--c-text);
 }
 
+* {
+    @include sizes();
+}
 
 .db      { display: block; }
 .dib     { display: inline-block; }
-.m-hide,
 .hide    { display: none; }
 .f-left  { float: left; }
 .f-right { float: right; }

@@ -1,5 +1,36 @@
 form {
+    display: table;
+
     input, textarea {
         @extend %input;
+        line-height: var(--f-line-height);
+    }
+    textarea {
+        resize: none;
+        padding: gs(1/4);
+        min-height: gs(2);
+    }
+
+    .row {
+        $rowPadding: 1rem;
+        display: table-row;
+        height: calc(#{gs(1)} + #{$rowPadding});
+        user-select: none;
+        label {
+            display: table-cell;
+            vertical-align: top;
+            border-bottom: #{$rowPadding} solid transparent;
+            padding-top: gs(0.3);
+
+            & > *  { vertical-align: middle; }
+            & > span {
+                text-transform: uppercase;
+                color: var(--c-text-light);
+                margin-right: gs(1/2);
+            }
+        }
+        label + * {
+            display: table-cell;
+        }
     }
 }
