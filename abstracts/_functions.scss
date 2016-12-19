@@ -13,3 +13,19 @@
     --c-#{$name}-dark: darken($value, 2%);
     --c-#{$name}-opacity: rgba($value, 0.5);
 }
+
+
+// We use these functions to define ranges for various things, like media queries.
+@function lower-bound($range) {
+    @if length($range) <= 0 {
+        @return 0;
+    }
+    @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+    @if length($range) < 2 {
+        @return 999999999999;
+    }
+    @return nth($range, 2);
+}

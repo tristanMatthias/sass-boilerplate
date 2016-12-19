@@ -1,4 +1,13 @@
 body > header {
-    background-color: var(--c-main);
-    height: gs(1.5);
+    background-color: var(--header-color, var(--c-main));
+    height: var(--header-height);
+
+    .logo {
+        height: gs(1);
+        margin: gs(1);
+        fill: var(--c-main);
+        &.white {
+            fill: var(--c-white);
+        }
+    }
 }

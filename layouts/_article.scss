@@ -1,6 +1,21 @@
 article {
-    max-width: gs(18);
     margin: auto;
 
     padding-top: gs(2);
+}
+
+@media #{$tiny-up} {
+    article {
+        max-width: gs(20);
+        padding-left: gs(1);
+        padding-right: gs(1);
+    }
+}
+
+@media #{$large-up} {
+    article {
+        max-width: 68.8rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

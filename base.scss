@@ -25,10 +25,14 @@ html {
     font-size: var(--fs-base);
     line-height: var(--f-line-height);
     color: var(--c-text);
+    background-color: var(--c-bg);
 }
 
 * {
     @include sizes();
+}
+*[m-view] > * {
+    animation: fadeIn var(--ani-time) forwards;
 }
 
 .db      { display: block; }
@@ -39,3 +43,8 @@ html {
 .cover   { @extend %cover; }
 .por     { position: relative; }
 .curp    { cursor: pointer; }
+.clear   { clear: both; height: 0; }
+
+.ta-l { text-align: left; }
+.ta-c { text-align: center; }
+.ta-r { text-align: right; }

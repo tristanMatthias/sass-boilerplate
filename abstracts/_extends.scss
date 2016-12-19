@@ -60,3 +60,20 @@ $sizes: ('tiny', 'small', 'medium', 'large', 'huge');
 %shadow {
     box-shadow: 0 3px 4px var(--c-shadow);
 }
+%shadow-large {
+    box-shadow: 0 3px 50px var(--c-shadow-large);
+}
+%cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+%align-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

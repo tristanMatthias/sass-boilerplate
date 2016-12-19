@@ -5,19 +5,11 @@ button {
 
     line-height: gs(1);
     padding: 0 gs(1/4);
-    @extend %rounded;
-    @extend %fw-bold;
-    @extend %shadow;
-    font-family: var(--ff-heading);
-    letter-spacing: 1.5px;
+    font-family: var(--ff-buttons, var(--ff-main));
     color: var(--c-main);
 
-    &:hover {
-        background: var(--c-bg-light);
+    span {
+        vertical-align: middle;
     }
-    &:active {
-        background: var(--c-bg-dark);
-        box-shadow: 0 1px 4px var(--c-shadow);
-        transform: scale(0.98);
-    }
+    span + .i { margin-left: gs(1/4); }
 }

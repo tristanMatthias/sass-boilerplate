@@ -1,5 +1,6 @@
 form {
     display: table;
+    margin-bottom: gs(1/2);
 
     input, textarea {
         @extend %input;
