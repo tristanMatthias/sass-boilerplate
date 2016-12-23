@@ -1,15 +1,11 @@
 button {
-    border: none;
-    background: var(--c-bg);
-    border: var(--border-light);
+    @apply --component-button;
+    @include sizes();
 
-    line-height: gs(1);
-    padding: 0 gs(1/4);
-    font-family: var(--ff-buttons, var(--ff-main));
-    color: var(--c-main);
-
-    span {
+    span, m-icon {
+        display: inline-block;
         vertical-align: middle;
     }
+    m-icon + span,
     span + .i { margin-left: gs(1/4); }
 }

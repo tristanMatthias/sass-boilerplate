@@ -1,9 +1,10 @@
 @import "abstracts/include";
 
-.c-main    { color: var(--c-main); }
-.c-alt     { color: var(--c-alt); }
-.c-error   { color: var(--c-error); }
-.c-success { color: var(--c-success); }
+.c-main       { color: var(--c-main); }
+.c-alt        { color: var(--c-alt); }
+.c-error      { color: var(--c-error); }
+.c-success    { color: var(--c-success); }
 
-.c-grey    { color: var(--c-grey-mid); }
+.c-white      { color: var(--c-white); }
+.c-grey       { color: var(--c-grey-mid); }
 .c-grey-light { color: var(--c-grey-light); }

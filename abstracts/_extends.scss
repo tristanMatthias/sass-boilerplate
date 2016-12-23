@@ -3,6 +3,7 @@ $sizes: ('tiny', 'small', 'medium', 'large', 'huge');
 @mixin sizes {
     @each $size in $sizes {
         &.#{$size} {
+            padding: 0;
             width: var(--size-#{$size});
             height: var(--size-#{$size});
         }
@@ -76,4 +77,10 @@ $sizes: ('tiny', 'small', 'medium', 'large', 'huge');
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+%ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

@@ -1,0 +1,20 @@
+/** This file exists purely because SASS does not allow multiline css variables.
+    These are used for decalaring style blocks, in combination with the @apply
+    CSS native mixin.
+**/
+
+
+/********************************************************************* Button */
+:root {
+    --component-button: {
+        border: none;
+        background: var(--c-bg);
+        border: var(--border-light);
+
+        line-height: var(--grid-size);
+        padding: 0 calc(var(--grid-size)/4);
+        font-family: var(--ff-buttons, var(--ff-main));
+        color: var(--c-main);
+        user-select: none;
+    }
+}

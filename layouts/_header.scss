@@ -1,6 +1,7 @@
 body > header {
     background-color: var(--header-color, var(--c-main));
     height: var(--header-height);
+    width: 100%;
 
     .logo {
         height: gs(1);

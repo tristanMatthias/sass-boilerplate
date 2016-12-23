@@ -52,7 +52,7 @@ $item-margin: var(--grid-item-padding);
 }
 
 //------------------------------------------------------------ Responsive widths
-$sizes: (
+$responsive-sizes: (
     'tn': $tiny-up,
     'sm': $small-up,
     'md': $medium-up,
@@ -62,7 +62,7 @@ $sizes: (
 );
 
 
-@each $name, $size in $sizes {
+@each $name, $size in $responsive-sizes {
     @media #{$size} {
         .grid {
             *[class*='cell-'] {
